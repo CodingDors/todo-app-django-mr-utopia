@@ -5,4 +5,4 @@ tasks = []
 # Create your views here.
 def index(request):
     # TODO
-    return
+    return render(request, "tasks/index.html")
