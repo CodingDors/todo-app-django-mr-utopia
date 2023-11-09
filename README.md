@@ -32,7 +32,7 @@ You will be responsible for the following:
 To make sure your application is working as expected:
 
 1. Stop the server if it's still running (you can use Ctrl+C in the terminal for that).
-2. In the root directory of the project, run the following command: `python manage.py test`
+2. In your terminal, run the following command: `python manage.py test`
 
 ## 🤔 How to Submit:
 Once all the tests have completed:
