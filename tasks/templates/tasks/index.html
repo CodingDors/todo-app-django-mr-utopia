@@ -4,11 +4,18 @@
         <title>ToDo App</title>
     </head>
     <body>
-        <!-- TODO: Ensure there is a list (<ul> or <ol>) to display the tasks dynamically as they are added. -->
+        <h1>Todo App</h1>
+        <ul>
+            {% for task in tasks %}
+                <li>{{ task }}</li>
+            {% endfor %}
+        </ul>
 
-
-        <!-- TODO: Create a form to submit new tasks -->
-
-        
+        <h2>Add New Task</h2>
+        <form action="{% url 'index' %}" method="post">
+            {% csrf_token %}
+            <input type="text" name="new_task" />
+            <input type="submit" />
+        </form>
     </body>
 </html>
