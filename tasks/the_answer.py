@@ -14,3 +14,11 @@ def index(request):
         return render(request, "tasks/index.html", {
             "tasks": tasks
         }) 
+
+def remove(request):
+    if request.method == "POST":
+        task = request.POST["task"]
+        tasks.remove(task)
+        return render(request, "tasks/index.html", {
+            "tasks": tasks
+        })
