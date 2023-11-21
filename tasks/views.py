@@ -14,7 +14,7 @@ def index(request):
     """
     Handle POST Requests in index Function for Adding Tasks:
         Still in the index function, add an else block to handle POST requests.
-        Retrieve the task from the form data using request.POST["task"].
+        Retrieve the task from the form data using request.POST["new_task"].
         Append the retrieved task to the tasks list.
         Finally, use `render` function to render "index.html" and pass the tasks list as a variable.
     """
