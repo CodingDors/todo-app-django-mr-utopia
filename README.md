@@ -9,7 +9,7 @@ Your task is to create a simple ToDo application that allows a user to:
 - View the entered task appended to an unordered list on the page.
 - Remove the task they want to delete (by clicking in a individual button for each item)
 
-You'll only write in the `tasks/views.py` file. In case you need to see the solution, it is at `tasks/answer.py`.
+You'll only write in the `tasks/views.py` file. In case you need to see the solution, it is at `tasks/the_answer.py`.
 
 ## 📚 Starter Code
 The HTML code consists of two primary components:
