@@ -5,7 +5,7 @@
     <body>
         <h1>ToDo App</h1>
         <ul>
-            {% for task in todo %}
+            {% for task in tasks %}
             <li>
                 {{ task }}
                 <form action="{% url 'remove' %}" method="post">
