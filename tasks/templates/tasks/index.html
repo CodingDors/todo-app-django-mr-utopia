@@ -9,6 +9,7 @@
             <li>
                 {{ task }}
                 <form action="{% url 'remove' %}" method="post">
+                    {% csrf_token %}
                     <input type="hidden" name="task" value="{{task}}" />
                     <button type="submit">Remove</button>
                 </form>
